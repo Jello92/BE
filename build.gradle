@@ -53,11 +53,38 @@ dependencies {
     implementation 'org.springframework.security:spring-security-oauth2-client'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
-    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-
-
     implementation group: 'org.json', name: 'json', version: '20220924'
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.4'
+
+    //	JSON
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    // WebSocket
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
+    // sockjs
+    implementation 'org.webjars:sockjs-client:1.5.1'
+    // stomp
+    implementation 'org.webjars:stomp-websocket:2.3.4'
+    // gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // aws s3
+    implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+
+//	// spring oauth2
+//	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-client
+//	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.7.1'
+
+    // mapstruct
+    // https://mvnrepository.com/artifact/org.mapstruct/mapstruct
+    implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.4.2.Final'
+
+    // https://mvnrepository.com/artifact/org.mapstruct/mapstruct-processor
+    annotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: '1.4.2.Final'
+
+    // mapstruct - lombok
+    implementation 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
 
 //    // 스웨거 관련
 //    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version:'1.6.9'
